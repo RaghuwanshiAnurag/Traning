@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+@import"~bootstrap/dist/css/bootstrap.css";
+p{
+    color:green;
+    font-size: 25px;
+    font-weight: 400;
+    font-family: 'Abril Fatface';
+    text-align: center;
+}
+.linkstyle{
+    text-decoration: underline;
+    color:red;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 500;
+}
+table,th,td{
+    position: left;
+    border:0.5px solid white;
+    border-collapse: collapse;
+    padding: 10px;
+    margin-bottom: 100%;
+}
+tr:nth-child(even) {
+    background-color: #D6EEEE;
+}
+th{
+    background-color: aquamarine;
+}
