@@ -5,6 +5,7 @@ import { CEOComponent } from './ceo/ceo.component';
 import { CountrymanagerComponent } from './countrymanager/countrymanager.component';
 import { EmployeedetailsComponent } from './employeedetails/employeedetails.component';
 import { EmployeemoduleComponent } from './employeemodule/employeemodule.component';
+import { ErrorComponent } from './error/error.component';
 import { FounderComponent } from './founder/founder.component';
 import { HeadofSoftwareengineeringComponent } from './headof-softwareengineering/headof-softwareengineering.component';
 import { HomeComponent } from './home/home.component';
@@ -30,7 +31,8 @@ const routes: Routes = [
        ]}
      ]}
    ]}  
-  ]}
+  ]},
+  {path:'**',component:ErrorComponent}
 
 ];
 

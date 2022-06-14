@@ -14,6 +14,15 @@ import { CountrymanagerComponent } from './countrymanager/countrymanager.compone
 import { HeadofSoftwareengineeringComponent } from './headof-softwareengineering/headof-softwareengineering.component';
 import { TeamLeadComponent } from './team-lead/team-lead.component';
 import { TeamMembersComponent } from './team-members/team-members.component';
+import { ErrorComponent } from './error/error.component';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { FormsModule } from '@angular/forms';
+import { NgfilterComponent } from './ngfilter/ngfilter.component';
+import { HighlightDirective } from './highlight.directive';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
+import { ProficiencyPipe } from './proficiency.pipe';
+
 
 @NgModule({
   declarations: [
@@ -28,11 +37,19 @@ import { TeamMembersComponent } from './team-members/team-members.component';
     CountrymanagerComponent,
     HeadofSoftwareengineeringComponent,
     TeamLeadComponent,
-    TeamMembersComponent
+    TeamMembersComponent,
+    ErrorComponent,
+    NgfilterComponent,
+    HighlightDirective,
+    ParentComponent,
+    ChildComponent,
+    ProficiencyPipe
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    Ng2SearchPipeModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
